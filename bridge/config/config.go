@@ -76,6 +76,7 @@ type Protocol struct {
 	BindAddress            string // mattermost, slack // DEPRECATED
 	Buffer                 int    // api
 	Charset                string // irc
+	ClientID               string // msteams
 	ColorNicks             bool   // only irc for now
 	Debug                  bool   // general
 	DebugLevel             int    // only for irc now
@@ -122,6 +123,7 @@ type Protocol struct {
 	RemoteNickFormat       string     // all protocols
 	RunCommands            []string   // IRC
 	Server                 string     // IRC,mattermost,XMPP,discord
+	SessionFile            string     // msteams,whatsapp
 	ShowJoinPart           bool       // all protocols
 	ShowTopicChange        bool       // slack
 	ShowUserTyping         bool       // slack
@@ -132,6 +134,8 @@ type Protocol struct {
 	SyncTopic              bool       // slack
 	TengoModifyMessage     string     // general
 	Team                   string     // mattermost, keybase
+	TeamID                 string     // msteams
+	TenantID               string     // msteams
 	Token                  string     // gitter, slack, discord, api
 	Topic                  string     // zulip
 	URL                    string     // mattermost, slack // DEPRECATED
