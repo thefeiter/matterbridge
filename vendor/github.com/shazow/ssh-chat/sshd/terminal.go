@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/shazow/ssh-chat/sshd/terminal"
-	"golang.org/x/crypto/ssh"
-)
+)//"golang.org/x/crypto/ssh"
+//)
 
 var keepaliveInterval = time.Second * 30
 var keepaliveRequest = "keepalive@ssh-chat"
